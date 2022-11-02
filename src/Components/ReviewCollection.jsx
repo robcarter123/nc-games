@@ -1,7 +1,7 @@
 import { Spinner } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import * as api from "../api";
-import CardExample from "./Cards";
+import ReviewCard from "./ReviewCards";
 
 const ReviewCollection = () => {
   const [allReviews, setAllReviews] = useState([]);
@@ -19,7 +19,7 @@ const ReviewCollection = () => {
   return (
     <div className="reviews">
       {allReviews.map((review) => {
-        return <CardExample review={review} />;
+        return <ReviewCard review={review} />;
       })}
     </div>
   );
