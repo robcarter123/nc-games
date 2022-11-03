@@ -6,6 +6,7 @@ import './App.css'
 import ReviewCollection from "./Components/ReviewCollection"
 import "bootstrap/dist/css/bootstrap.min.css";
 import CategoryCollection from "./Components/CategoryCollection";
+import SingleReview from "./Components/SingleReview";
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<CategoryCollection />}/>
           <Route path="/reviews/:category" element={<ReviewCollection/>}/>
+          <Route path="/:category/:review_id" element={<SingleReview allCategories={allCategories}/>}/>
         </Routes>
     </div>
   </BrowserRouter>
