@@ -26,7 +26,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<CategoryCollection />}/>
-          <Route path="{/:categories}" element={<CategoryCollection allCategories={allCategories}/>}/>
+          <Route path="/reviews/:category" element={<ReviewCollection/>}/>
         </Routes>
     </div>
   </BrowserRouter>

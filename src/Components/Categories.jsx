@@ -9,7 +9,7 @@ function CategoryCards({categories}) {
       <Card.Body >
         <Card.Title className="catHeader">{upper}</Card.Title>
         <Card.Text className="catBody">{categories.description}</Card.Text>
-        <Link to={`/${categories.slug}`}>
+        <Link to={`/reviews/${categories.slug}`}>
           <Button 
                 variant="primary">Read Reviews
           </Button>
