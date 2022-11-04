@@ -15,3 +15,7 @@ export const getCategories = () => {
 export const getReviewsByCategory = (category) => {
     return api.get(`/api/reviews?category=${category}`);
 }
+
+export const getReviewById = (review_id) => {
+    return api.get(`/api/reviews/${review_id}`)
+}

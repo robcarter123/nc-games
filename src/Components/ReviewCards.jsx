@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function ReviewCard( {review} ) {
   return (
@@ -11,7 +12,10 @@ function ReviewCard( {review} ) {
           <Card.Text className="card_body"> {review.review_body.substring(0, 150) + '...'}</Card.Text>
           <Card.Text>{`Reviewed by: ${review.owner}`}</Card.Text>
           <Card.Text>{`Category: ${review.category}`}</Card.Text>
-          <Button variant="primary">Read More</Button>
+          <Card.Text>{`Review_id: ${review.review_id}`}</Card.Text>
+          <Link to={`/${review.category}/${review.review_id}`}>
+            <Button variant="primary">Read More</Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>
