@@ -21,6 +21,7 @@ const ReviewCollection = () => {
   return (
     <div className="reviews">
       {allReviews.map((review) => {
+        console.log(review);
         return <ReviewCard review={review} />;
       })}
     </div>

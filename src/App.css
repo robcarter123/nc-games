@@ -19,5 +19,23 @@ h1{
 
 .single-review-body{
   margin: 30px;
+}
+
+.main-review-img{
+  height: 200px;
+  width: 200px;
+}
+
+.d-inline-flex{
+  margin: 10px;
+  align-items: center;
   
+}
+
+.card-style{
+  text-align: left;
+}
+
+.comments-h2{
+  text-align: left;
 }

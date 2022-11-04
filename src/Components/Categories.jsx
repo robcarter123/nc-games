@@ -19,6 +19,4 @@ function CategoryCards({categories}) {
   );
 }
 
-// className='d-inline-flex'
-
 export default CategoryCards;
