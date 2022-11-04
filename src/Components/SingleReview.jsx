@@ -21,8 +21,8 @@ const SingleReview = ({ allCategories }) => {
   return (
     <div className="single_review">
       <h2>{review.title}</h2>
-      <p>{`Review by: ${review.owner} date ${review.created_at}`}</p>
-      <img src={`${review.review_img_url}`} alt={`${review.title}`}/>
+      <p>{`Review by: ${review.owner} Date: ${review.created_at.substring(0, 10)}`}</p>
+      <img className="review-img" src={`${review.review_img_url}`} alt={`${review.title}`}/>
       <p className="single-review-body">{review.review_body}</p>
     </div>
   );
